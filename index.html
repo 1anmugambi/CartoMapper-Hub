@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Studio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Survey Studio</h1>
+        <div id="search-container">
+            <input type="text" id="location-input" placeholder="Enter location...">
+            <button id="search-button">Search</button>
+        </div>
+    </header>
+    <main>
+        <!-- Google Map container -->
+        <div id="map"></div>
+
+        <!-- Coordinates display -->
+        <div id="coordinates">
+            <h2>Coordinates</h2>
+            <p id="latitude">Latitude: </p>
+            <p id="longitude">Longitude: </p>
+        </div>
+
+        <!-- Distance calculation -->
+<div id="distance">
+    <h2>Distance Calculation</h2>
+    <form id="distance-form">
+        <label for="point1-lat">Point 1 Lat:</label>
+        <input type="text" id="point1-lat" name="point1-lat"><br>
+        <label for="point1-lng">Point 1 Lng:</label>
+        <input type="text" id="point1-lng" name="point1-lng"><br>
+        <label for="point2-lat">Point 2 Lat:</label>
+        <input type="text" id="point2-lat" name="point2-lat"><br>
+        <label for="point2-lng">Point 2 Lng:</label>
+        <input type="text" id="point2-lng" name="point2-lng"><br>
+        <button type="submit">Calculate Distance</button>
+    </form>
+    <p id="distance-value">Distance: </p>
+</div>
+
+
+        <!-- Area calculation -->
+        <div id="area">
+            <h2>Area Calculation</h2>
+            <p>Click on the map to define a polygon</p>
+            <p id="area-value">Area: </p>
+        </div>
+    </main>
+    <footer>
+        <p>Made with ❤️ by Mugambi Kinoti</p>
+    </footer>
+    <!-- Google Maps API script -->
+      <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMKhiODSt4amJVvi94EVyiEfzDKy-N8UA&libraries=drawing&callback=initMap">
+      </script>
+          <!-- JavaScript code -->
+    <script defer src="script.js"></script>
+</body>
+</html>
