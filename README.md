@@ -1,4 +1,3 @@
-# CartoMapper-Hub
 # Survey Studio 🌍
 
 Survey Studio is a powerful web application that enables users to perform various geographical calculations. With a user-friendly map interface, you can calculate distances, areas, view coordinates and more!
